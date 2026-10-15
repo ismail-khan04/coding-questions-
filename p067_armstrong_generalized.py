@@ -1,0 +1,6 @@
+# Problem 67: Check if a number is an Armstrong number (any number of digits)
+n = abs(int(input("Enter a number: ")))
+digits = str(n)
+k = len(digits)
+total = sum(int(d) ** k for d in digits)
+print("Armstrong number" if total == n else "Not an Armstrong number")
